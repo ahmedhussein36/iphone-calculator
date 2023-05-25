@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="result">
+            <input type="text" placeholder="0" id="output" class="span">
+        </div>
+        <div class="buttons">
+            <button onclick="deleteNum()" class="item item1 clear">AC</button>
+            <button onclick="clearResult()" class="item item1 delete ">C</button>
+            <button class="item percent sign">%</button>
+            <button onclick="insert('/')" class="item item3 sign">/</button>
+            <button onclick="insert('7')" class="item numbers">7</button>
+            <button onclick="insert('8')" class="item numbers">8</button>
+            <button onclick="insert('9')" class="item numbers">9</button>
+            <button onclick="insert('*')" class="item item3 sign">x</button>
+            <button onclick="insert('4')" class="item numbers">4</button>
+            <button onclick="insert('5')" class="item numbers">5</button>
+            <button onclick="insert('6')" class="item numbers">6</button>
+            <button onclick="insert('-')" class="item item3 sign">-</button>
+            <button onclick="insert('1')" class="item numbers">1</button>
+            <button onclick="insert('2')" class="item numbers">2</button>
+            <button onclick="insert('3')" class="item numbers">3</button>
+            <button onclick="insert('+')" class="item item3 sign">+</button>
+            <button class="item item1 negative">+/-</button>
+            <button onclick="insert('0')" class="item itemZero numbers">0</button>
+            <button onclick="insert('.')" class="item comma ">.</button>
+            <button onclick="calc()" class="item item3 equal">=</button>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

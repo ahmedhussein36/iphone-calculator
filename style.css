@@ -1,0 +1,116 @@
+:root {
+    --gray: #A5A5A5;
+    --dark-gray: #343434;
+    --btn-orang: #ff9f0a;
+    --BG-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #121319;
+    height: 100vh;
+    font-family: 'Work Sans', sans-serif;
+}
+
+html,
+body #fullheight {
+    font-family: 'Work Sans', sans-serif;
+    min-height: 100% !important;
+    height: 100%;
+}
+
+button,
+input {
+    font-family: 'Work Sans', sans-serif;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.container {
+    max-width: 414px;
+    padding: 15px;
+    margin: auto;
+    height: 100%;
+    background: var(--BG-color);
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #ffff;
+    height: 39%;
+}
+
+.result #output {
+    max-width: 100%;
+    color: #ffff;
+    font-size: 85px;
+    font-weight: 300;
+    text-align: right;
+    padding: 0 20px;
+}
+
+.result #output::placeholder {
+    color: #ffff;
+}
+
+.buttons {
+    width: 100%;
+    height: 60%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.buttons .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    width: 85px;
+    height: 85px;
+    border-radius: 100%;
+    padding: 10px;
+    align-self: center;
+    justify-self: center;
+    cursor: pointer
+}
+
+.buttons .percent {
+    background: var(--gray);
+    color: #000;
+}
+
+.buttons .item1 {
+    background: var(--gray);
+}
+
+.buttons .item3 {
+
+    background: var(--btn-orang);
+}
+
+.numbers,
+.comma {
+    background: var(--dark-gray);
+    color: #ffff;
+}
+
+.negative,
+.clear {
+    color: #000;
+}
+
+/* .itemZero {
+    justify-content: flex-start !important;
+    padding-left: 30px !important;
+    grid-column: span 2;
+    width: 180px !important;
+    border-radius: 100px !important;
+} */
